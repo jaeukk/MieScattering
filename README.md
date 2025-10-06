@@ -7,3 +7,7 @@ This file includes simple examples about an infinitely long cylinder (2D) and a 
 * Requirements:
     - scipy
     - numpy
+
+* To Do:
+    - Add cases of complex-valued dielectric constant.
+    - Add functions for the extinct / absorption cross sections
