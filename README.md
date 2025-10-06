@@ -1,10 +1,9 @@
-# ILA project template
+# Python code for the Mie differential cross section of a single dielectric particle.
 
-To initialize the project with your customized name, run:
+Consult with the Jupyter notebook, `scattering-cross-section.ipynb`
 
-```bash
-python3 script/init.py <project_name>
-```
+This file includes simple examples about an infinitely long cylinder (2D) and a sphere (3D).
 
-This will generate the template ILA project. 
-The directory `template` can be removed afterward.
+* Requirements:
+    - scipy
+    - numpy
