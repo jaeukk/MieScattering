@@ -23,7 +23,7 @@ def a_coeff(n, x, m, first_order=False):
     m : float 
         Relative refractive index of the cylinder (particle refractive index divided by medium refractive index).
     first_order : bool, optional
-        If True, uses the first-order contribution for weak-contrast regime
+        If True, uses the first-order contribution for the weak-contrast regime
         If False, computes the full Mie coefficient
 
     Returns
@@ -83,7 +83,7 @@ def dsigma_ (ka, eps, thetas,M=50, first_order=False):
 
     Notes
     -----
-    The result is normalized by the cylinder radius and wavenumber, i.e., (d\sigma/dθ) / a."""
+    The result is normalized by the cylinder radius, i.e., (d\sigma/dθ) / a."""
     m = np.sqrt(eps)
     bn = np.array([ b_coeff(n,ka,m,first_order) for n in range(0,M)])
     an = np.array([ a_coeff(n,ka,m,first_order) for n in range(0,M)])
@@ -124,7 +124,7 @@ def sigma_ (ka, eps, M=50,first_order=False):
 
     Notes
     -----
-    The result is normalized by the cylinder radius and wavenumber, i.e., sigma / a."""
+    The result is normalized by the cylinder radius, i.e., sigma / a."""
 
     m = np.sqrt(eps)
     bn = np.array([ b_coeff(n,ka,m,first_order) for n in range(0,M)])
